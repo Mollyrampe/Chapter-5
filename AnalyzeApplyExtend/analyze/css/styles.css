@@ -1,7 +1,7 @@
 /*
-    Student Name
-	File Name: 
-	Current Date: 
+    Student Name: Molly Rampe 
+	File Name: styles.css
+	Current Date: May 9th, 2024
 */
 
 /* CSS reset */
@@ -19,6 +19,10 @@ body {
 img {
     max-width: 100%;
     display: block;
+}
+/* Style rules for mobile viewport begin here */
+.tablet-desktop {
+    display: none;
 }
 
 /* Style rules for header content */
@@ -38,6 +42,7 @@ nav {
 
 nav ul {
     text-align: center;
+    list-style: none; /* Remove bullet marker */
 }
 
 nav li {
@@ -45,6 +50,7 @@ nav li {
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
     padding: 3%;
+    display: inline-block; /* Display as inline-block */
 }
 
 nav li a {
@@ -60,9 +66,28 @@ main {
     font-family: 'PT Sans', sans-serif;
 }
 
-main p {
-    font-size: 1.25em;
+main p.btn {
+    background-color: #375f1b;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
 }
+
+/* Anchor within btn class style */
+.btn a {
+    color: #ebf7e3;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+}
+
+/* Style rule for corner class */
+.corner {
+    border-radius: 12px;
+}
+
 
 /* Style rules for footer content */
 footer {
